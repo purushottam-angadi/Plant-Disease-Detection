@@ -1,0 +1,192 @@
+{
+  "Apple___Apple_scab": {
+    "symptoms": "Olive-green to black velvety spots on leaves and fruit; leaves may curl and drop early.",
+    "causes": "Fungus Venturia inaequalis, spread by wind and rain in cool, wet spring weather.",
+    "cures": "Remove fallen leaves, prune for airflow, apply fungicide (captan or myclobutanil) starting at bud break."
+  },
+  "Apple___Black_rot": {
+    "symptoms": "Purple spots on leaves, brown rotting fruit with concentric rings, sunken cankers on bark.",
+    "causes": "Fungus Botryosphaeria obtusa, entering through wounds and spreading in warm, humid conditions.",
+    "cures": "Prune out dead wood and mummified fruit, apply fungicide sprays, keep trees healthy and well-watered."
+  },
+  "Apple___Cedar_apple_rust": {
+    "symptoms": "Bright orange-yellow spots on leaves, sometimes with tube-like structures underneath.",
+    "causes": "Fungus Gymnosporangium juniperi-virginianae, requiring nearby juniper/cedar trees to complete its cycle.",
+    "cures": "Remove nearby juniper hosts if possible, apply preventive fungicide in spring, plant resistant varieties."
+  },
+  "Apple___healthy": {
+    "symptoms": "No visible spots, discoloration, or lesions; leaves are uniformly green.",
+    "causes": "Not applicable.",
+    "cures": "Maintain good watering, pruning, and periodic monitoring to keep the tree disease-free."
+  },
+  "Blueberry___healthy": {
+    "symptoms": "Leaves are green and uniform with no spotting or wilting.",
+    "causes": "Not applicable.",
+    "cures": "Continue balanced fertilization, proper spacing, and regular inspection."
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "symptoms": "White powdery coating on leaves and shoots, leaf curling, stunted new growth.",
+    "causes": "Fungus Podosphaera clandestina, favored by warm days, cool nights, and poor air circulation.",
+    "cures": "Prune for airflow, avoid excess nitrogen, apply sulfur or potassium bicarbonate fungicide."
+  },
+  "Cherry_(including_sour)___healthy": {
+    "symptoms": "No white coating, spots, or curling; leaves appear normal and green.",
+    "causes": "Not applicable.",
+    "cures": "Maintain regular pruning and monitoring to sustain plant health."
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "symptoms": "Rectangular gray-tan lesions running parallel to leaf veins, eventually merging and killing leaf tissue.",
+    "causes": "Fungus Cercospora zeae-maydis, thriving in humid, warm weather with extended leaf wetness.",
+    "cures": "Rotate crops, use resistant hybrids, apply foliar fungicide if disease pressure is high."
+  },
+  "Corn_(maize)___Common_rust_": {
+    "symptoms": "Small reddish-brown raised pustules scattered on both leaf surfaces.",
+    "causes": "Fungus Puccinia sorghi, spread by windborne spores, favored by cool, moist conditions.",
+    "cures": "Plant resistant hybrids, apply fungicide if severe, avoid excessive overhead irrigation."
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "symptoms": "Long, elliptical grayish-green to tan lesions on leaves, resembling cigar shapes.",
+    "causes": "Fungus Exserohilum turcicum, spread by wind and rain, favored by moderate temperatures and humidity.",
+    "cures": "Use resistant hybrids, rotate crops, till residue, apply fungicide during early infection."
+  },
+  "Corn_(maize)___healthy": {
+    "symptoms": "Leaves are green and free of lesions or discoloration.",
+    "causes": "Not applicable.",
+    "cures": "Continue crop rotation and regular field monitoring."
+  },
+  "Grape___Black_rot": {
+    "symptoms": "Small brown circular spots on leaves, shriveled black 'mummified' berries.",
+    "causes": "Fungus Guignardia bidwellii, spreading in warm, wet spring and summer conditions.",
+    "cures": "Remove mummified berries and infected debris, apply fungicide from early spring through veraison."
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "symptoms": "Tiger-stripe pattern of yellow and brown streaks between leaf veins, dark spotted berries.",
+    "causes": "Complex of wood-rotting fungi entering through pruning wounds, worsened by stress and age.",
+    "cures": "No full cure; prune out infected wood, avoid large pruning wounds, protect cuts with sealant."
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "symptoms": "Irregular dark brown spots on leaves that enlarge and cause premature leaf drop.",
+    "causes": "Fungus Pseudocercospora vitis, favored by warm, humid, rainy conditions.",
+    "cures": "Improve canopy airflow, remove infected leaves, apply copper-based or other fungicide."
+  },
+  "Grape___healthy": {
+    "symptoms": "Leaves and fruit show no spots, discoloration, or unusual patterns.",
+    "causes": "Not applicable.",
+    "cures": "Maintain routine canopy management and disease monitoring."
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "symptoms": "Blotchy yellow mottling on leaves, lopsided bitter fruit, twig dieback.",
+    "causes": "Bacterium spread by the Asian citrus psyllid insect; no known cure once infected.",
+    "cures": "Remove and destroy infected trees, control psyllid populations, plant certified disease-free stock."
+  },
+  "Peach___Bacterial_spot": {
+    "symptoms": "Small dark water-soaked spots on leaves and fruit that may crack and form scabs.",
+    "causes": "Bacterium Xanthomonas campestris pv. pruni, spread by rain splash and wind in warm weather.",
+    "cures": "Plant resistant varieties, apply copper-based bactericide, avoid overhead irrigation."
+  },
+  "Peach___healthy": {
+    "symptoms": "Leaves and fruit are free of spots or lesions.",
+    "causes": "Not applicable.",
+    "cures": "Continue regular pruning, watering, and monitoring."
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "symptoms": "Small water-soaked spots on leaves turning brown with yellow halos, spots also on fruit.",
+    "causes": "Bacterium Xanthomonas campestris pv. vesicatoria, spread by rain splash and contaminated tools.",
+    "cures": "Use disease-free seed, rotate crops, apply copper-based bactericide, avoid overhead watering."
+  },
+  "Pepper,_bell___healthy": {
+    "symptoms": "Leaves and fruit appear normal with no spotting.",
+    "causes": "Not applicable.",
+    "cures": "Maintain balanced watering and periodic inspection."
+  },
+  "Potato___Early_blight": {
+    "symptoms": "Dark brown spots with concentric rings ('target' pattern) on older leaves first.",
+    "causes": "Fungus Alternaria solani, favored by warm temperatures and alternating wet/dry conditions.",
+    "cures": "Rotate crops, remove infected debris, apply fungicide such as chlorothalonil or mancozeb."
+  },
+  "Potato___Late_blight": {
+    "symptoms": "Water-soaked gray-green spots on leaves turning brown/black, white mold on leaf undersides.",
+    "causes": "Oomycete Phytophthora infestans, spreading rapidly in cool, wet, humid weather.",
+    "cures": "Destroy infected plants promptly, apply fungicide preventively, avoid overhead irrigation."
+  },
+  "Potato___healthy": {
+    "symptoms": "Leaves show no spots, wilting, or discoloration.",
+    "causes": "Not applicable.",
+    "cures": "Continue crop rotation and regular field checks."
+  },
+  "Raspberry___healthy": {
+    "symptoms": "Leaves and canes appear normal with no lesions or discoloration.",
+    "causes": "Not applicable.",
+    "cures": "Maintain proper pruning and spacing for airflow."
+  },
+  "Soybean___healthy": {
+    "symptoms": "Leaves are uniformly green with no spots or curling.",
+    "causes": "Not applicable.",
+    "cures": "Continue crop rotation and routine field monitoring."
+  },
+  "Squash___Powdery_mildew": {
+    "symptoms": "White powdery patches on leaves and stems, leaves may yellow and shrivel.",
+    "causes": "Fungus Podosphaera xanthii, favored by warm days, high humidity, and shaded conditions.",
+    "cures": "Improve air circulation, remove infected leaves, apply sulfur or potassium bicarbonate spray."
+  },
+  "Strawberry___Leaf_scorch": {
+    "symptoms": "Small purple spots on leaves that merge into scorched-looking brown patches.",
+    "causes": "Fungus Diplocarpon earlianum, spread by rain splash in warm, wet conditions.",
+    "cures": "Remove infected leaves after harvest, improve airflow, apply fungicide if recurring."
+  },
+  "Strawberry___healthy": {
+    "symptoms": "Leaves are green and free from spotting or scorching.",
+    "causes": "Not applicable.",
+    "cures": "Maintain proper spacing, mulching, and regular monitoring."
+  },
+  "Tomato___Bacterial_spot": {
+    "symptoms": "Small water-soaked spots on leaves and fruit turning dark brown with yellow halos.",
+    "causes": "Xanthomonas bacteria, spread by rain splash, handling, and contaminated seed.",
+    "cures": "Use certified disease-free seed, rotate crops, apply copper-based bactericide."
+  },
+  "Tomato___Early_blight": {
+    "symptoms": "Brown spots with concentric rings on lower leaves first, yellowing around lesions.",
+    "causes": "Fungus Alternaria solani, favored by warm temperatures and humid conditions.",
+    "cures": "Remove infected lower leaves, mulch soil, apply fungicide like chlorothalonil."
+  },
+  "Tomato___Late_blight": {
+    "symptoms": "Large water-soaked gray-green blotches on leaves, white fungal growth on undersides.",
+    "causes": "Oomycete Phytophthora infestans, spreading fast in cool, wet, humid weather.",
+    "cures": "Remove and destroy infected plants immediately, apply preventive fungicide, avoid wet foliage."
+  },
+  "Tomato___Leaf_Mold": {
+    "symptoms": "Pale yellow spots on upper leaf surface, olive-green to gray mold underneath.",
+    "causes": "Fungus Passalora fulva, favored by high humidity and poor ventilation, common in greenhouses.",
+    "cures": "Improve ventilation, reduce humidity, remove infected leaves, apply fungicide if needed."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "symptoms": "Small circular spots with dark borders and gray centers, mainly on lower leaves.",
+    "causes": "Fungus Septoria lycopersici, spread by rain splash in warm, humid conditions.",
+    "cures": "Remove infected leaves, mulch to prevent soil splash, apply fungicide, rotate crops."
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "symptoms": "Fine yellow stippling on leaves, fine webbing, leaves may bronze and dry out.",
+    "causes": "Tetranychus urticae mites, thriving in hot, dry conditions with low humidity.",
+    "cures": "Spray leaves with water to disrupt mites, use insecticidal soap or miticide, introduce predatory mites."
+  },
+  "Tomato___Target_Spot": {
+    "symptoms": "Brown lesions with concentric rings on leaves, stems, and fruit.",
+    "causes": "Fungus Corynespora cassiicola, favored by warm, humid, and wet conditions.",
+    "cures": "Remove infected debris, improve airflow, apply fungicide, avoid overhead irrigation."
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "symptoms": "Upward curling and yellowing of leaves, stunted growth, reduced fruit set.",
+    "causes": "Virus transmitted by whiteflies; no cure once a plant is infected.",
+    "cures": "Remove and destroy infected plants, control whiteflies, use resistant varieties and row covers."
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "symptoms": "Mottled light and dark green pattern on leaves, leaf curling, stunted growth.",
+    "causes": "Virus spread by contaminated hands, tools, and seed; no cure once infected.",
+    "cures": "Remove and destroy infected plants, disinfect tools, use resistant varieties and certified seed."
+  },
+  "Tomato___healthy": {
+    "symptoms": "Leaves and fruit appear normal with no discoloration or lesions.",
+    "causes": "Not applicable.",
+    "cures": "Continue balanced watering, staking, and regular inspection."
+  }
+}

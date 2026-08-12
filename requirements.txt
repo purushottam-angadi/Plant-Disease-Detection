@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+tensorflow-cpu==2.20.0
+pillow
+keras==3.13.2
+python-multipart

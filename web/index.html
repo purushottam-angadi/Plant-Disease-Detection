@@ -1,0 +1,265 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Plant Disease Detection Platform</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <h1>Plant Disease Detection Platform</h1>
+        <p class="description">
+            Upload or drag in a photo of a plant leaf, and the model will identify
+            the species and detect signs of disease.
+        </p>
+        <p class="description">
+            Need test images? Try sample leaves from the
+            <a href="https://github.com/spmohanty/plantvillage-dataset" target="_blank">PlantVillage dataset</a>.
+        </p>
+    </header>
+
+    <main>
+        <div class="left-panel">
+            <div id="dropZone" class="drop-zone">
+                <p id="dropText">Drag & drop an image here, or click to browse</p>
+                <input type="file" id="imageInput" accept="image/*" hidden>
+            </div>
+
+            <img id="preview">
+
+            <button onclick="predict()">Predict</button>
+
+            <div id="loading">Analyzing image...</div>
+        </div>
+
+        <div class="right-panel">
+            <div id="result">
+                <h2>Top 3 Predictions</h2>
+                <div id="predictionList"></div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<script>
+const imageInput = document.getElementById("imageInput");
+const preview = document.getElementById("preview");
+const resultDiv = document.getElementById("result");
+const predictionList = document.getElementById("predictionList");
+const loadingDiv = document.getElementById("loading");
+const dropZone = document.getElementById("dropZone");
+const dropText = document.getElementById("dropText");
+
+let selectedFile = null;
+
+function handleFile(file) {
+    if (!file) return;
+    selectedFile = file;
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
+    dropText.innerText = file.name;
+    resultDiv.style.display = "none";
+}
+
+dropZone.addEventListener("click", () => imageInput.click());
+imageInput.addEventListener("change", () => handleFile(imageInput.files[0]));
+
+dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZone.classList.add("dragover");
+});
+dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragover");
+});
+dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropZone.classList.remove("dragover");
+    handleFile(e.dataTransfer.files[0]);
+});
+
+function renderPredictions(predictions) {
+    predictionList.innerHTML = "";
+    predictions.forEach((p, i) => {
+        const item = document.createElement("div");
+        item.className = "prediction-item";
+        item.innerHTML = `
+            <p class="rank">#${i + 1}</p>
+            <p>Species: <span>${p.species}</span></p>
+            <p>Disease: <span>${p.status}</span></p>
+            <p>Confidence: <span>${p.confidence}%</span></p>
+        `;
+        predictionList.appendChild(item);
+    });
+}
+
+async function predict() {
+    if (!selectedFile) {
+        alert("Please select an image first.");
+        return;
+    }
+
+    loadingDiv.style.display = "block";
+    resultDiv.style.display = "none";
+
+    const formData = new FormData();
+    formData.append("file", selectedFile);
+
+    try {
+        const response = await fetch("/predict", {
+            method: "POST",
+            body: formData
+        });
+        const data = await response.json();
+
+        renderPredictions(data.predictions);
+        resultDiv.style.display = "block";
+    } catch (err) {
+        alert("Prediction failed. Please try again.");
+        console.error(err);
+    } finally {
+        loadingDiv.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Plant Disease Detector</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <h1>Plant Disease Detector</h1>
+        <p class="description">
+            Upload or drag in a photo of a plant leaf, and the model will identify
+            the species and detect signs of disease.
+        </p>
+        <p class="description">
+            Need test images? Try sample leaves from the
+            <a href="https://github.com/spmohanty/plantvillage-dataset" target="_blank">PlantVillage dataset</a>.
+        </p>
+    </header>
+
+    <main>
+        <div class="left-panel">
+            <div id="dropZone" class="drop-zone">
+                <p id="dropText">Drag & drop an image here, or click to browse</p>
+                <input type="file" id="imageInput" accept="image/*" hidden>
+            </div>
+
+            <img id="preview">
+
+            <button onclick="predict()">Predict</button>
+
+            <div id="loading">Analyzing image...</div>
+        </div>
+
+        <div class="right-panel">
+            <div id="result">
+                <h2>Top 3 Predictions</h2>
+                <div id="predictionList"></div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<script>
+const imageInput = document.getElementById("imageInput");
+const preview = document.getElementById("preview");
+const resultDiv = document.getElementById("result");
+const predictionList = document.getElementById("predictionList");
+const loadingDiv = document.getElementById("loading");
+const dropZone = document.getElementById("dropZone");
+const dropText = document.getElementById("dropText");
+
+let selectedFile = null;
+
+function handleFile(file) {
+    if (!file) return;
+    selectedFile = file;
+    preview.src = URL.createObjectURL(file);
+    preview.style.display = "block";
+    dropText.innerText = file.name;
+    resultDiv.style.display = "none";
+}
+
+dropZone.addEventListener("click", () => imageInput.click());
+imageInput.addEventListener("change", () => handleFile(imageInput.files[0]));
+
+dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZone.classList.add("dragover");
+});
+dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragover");
+});
+dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropZone.classList.remove("dragover");
+    handleFile(e.dataTransfer.files[0]);
+});
+
+function renderPredictions(predictions) {
+    predictionList.innerHTML = "";
+    predictions.forEach((p, i) => {
+        const item = document.createElement("div");
+        item.className = "prediction-item";
+        item.innerHTML = `
+            <p class="rank">#${i + 1}</p>
+            <p>Species: <span>${p.species}</span></p>
+            <p>Disease: <span>${p.status}</span></p>
+            <p>Confidence: <span>${p.confidence}%</span></p>
+            <p class="info"><strong>Symptoms:</strong> ${p.symptoms}</p>
+            <p class="info"><strong>Causes:</strong> ${p.causes}</p>
+            <p class="info"><strong>Cures:</strong> ${p.cures}</p>
+        `;
+        predictionList.appendChild(item);
+    });
+}
+
+async function predict() {
+    if (!selectedFile) {
+        alert("Please select an image first.");
+        return;
+    }
+
+    loadingDiv.style.display = "block";
+    resultDiv.style.display = "none";
+
+    const formData = new FormData();
+    formData.append("file", selectedFile);
+
+    try {
+        const response = await fetch("/predict", {
+            method: "POST",
+            body: formData
+        });
+        const data = await response.json();
+
+        renderPredictions(data.predictions);
+        resultDiv.style.display = "block";
+    } catch (err) {
+        alert("Prediction failed. Please try again.");
+        console.error(err);
+    } finally {
+        loadingDiv.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

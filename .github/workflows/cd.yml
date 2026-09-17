@@ -1,25 +1,27 @@
 name: Trigger auto deployment for plant-disease-detector
 
-# When this action will be executed
-on:
-  # Automatically trigger it when detected changes in repo
-  push:
-    branches: 
-      [ main ]
-    paths:
-    - '**'
-    - '.github/workflows/plant-disease-detector-AutoDeployTrigger.yml'
 
-  # Allow manual trigger 
+on:
+  workflow_run:
+    workflows: ["CI - Run Tests"]
+    branches: [ main ]
+    types:
+      - completed
+
+ 
   workflow_dispatch:
-      
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
     steps:
       - name: Checkout to the branch
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
 
       - name: Azure Login
         uses: azure/login@v2
@@ -36,9 +38,4 @@ jobs:
           registryPassword: ${{ secrets.PLANTDISEASEDETECTOR_REGISTRY_PASSWORD }}
           containerAppName: plant-disease-detector
           resourceGroup: plant-disease-rg
-          imageToBuild: plantdiseaseacr2026.azurecr.io/plant-disease-detector:${{ github.sha }}
-          
-            
-
-     
-
+          imageToBuild: plantdiseaseacr2026.azurecr.io/plant-disease-detector:${{ github.event.workflow_run.head_sha }}
